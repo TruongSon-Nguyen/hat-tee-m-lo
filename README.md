@@ -1,1 +1,207 @@
-# hat-tee-m-lo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors!</title>
+  <style>
+    body {
+      background-color: #dedede;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin: 0;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+    }
+
+    ul {
+      background-color: #f9f9f9;
+      padding: 20px 20px 20px 40px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0;
+    }
+
+    .color-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      text-align: center;
+      padding: 15px 10px;
+    }
+
+    .color-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .color-card img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 5px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .label {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0 0;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      background-color: #333;
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* Default styling for mobile */
+    .color-card {
+      width: 100%;
+    }
+
+    .color-card img {
+      width: 150px;
+      height: 150px;
+    }
+
+    /* Tablet View - Query #1 triggers at 772px */
+    @media screen and (min-width: 772px) {
+      .color-card {
+        width: 45%;
+      }
+      
+      .color-card img {
+        max-height: 30vh; /* 30% of viewport height */
+        width: auto; /* Maintain aspect ratio */
+        max-width: 100%; /* Ensure image doesn't overflow div */
+      }
+    }
+
+    /* Large Screen View - Query #2 triggers at 998px */
+    @media screen and (min-width: 998px) {
+      .color-card {
+        width: 30%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 id="top">Colors!</h1>
+  </header>
+
+  <main>
+    <h2>Basic Media Queries</h2>
+    <p>In this assignment you will add two media queries to the css file.</p>
+    <ul>
+      <li>The first media query should trigger at 772px and change the layout of the divs to be 45% of the viewport width. The images should have a maximum height of 30% of the viewport height.</li>
+
+      <li>The second media query should trigger at 998px and change the layout of the divs to be 30% of the viewport width.</li>
+    </ul>
+    <p>You will need to make additional changes to ensure that the divs appear next to each other and that the images are contained within the divs.  Some of these properties include display, width and max-height.</p>
+
+    <div>
+      <img src="images/Red.jpeg" alt="Red" width="200">
+      <p class = "label">Red</p>
+    </div>
+    <div>
+      <img src="images/Orange.png" alt="Orange" width="200">
+      <p class = "label">Orange</p>
+    </div>
+    <div>
+      <img src="images/Yellow.png" alt="Yellow" width="200">
+      <p class = "label">Yellow</p>
+    </div>
+    <div>
+      <img src="images/Green.png" alt="Green" width="200">
+      <p class = "label">Green</p>
+    </div>
+    <div>
+      <img src="images/Blue.png" alt="Blue" width="200">
+      <p class = "label">Blue</p>
+    </div>
+    <div>
+      <img src="images/Indigo.jpeg" alt="Indigo" width="200">
+      <p class = "label">Indigo</p>
+    </div>
+    <div>
+      <img src="images/Purple.png" alt="Purple" width="200">
+      <p class = "label">Purple</p>
+    </div>
+    <div>
+      <img src="images/Pink.jpeg" alt="Pink" width="200">
+      <p class = "label">Pink</p>
+    </div>
+    <div>
+      <img src="images/White.png" alt="White" width="200">
+      <p class = "label">White</p>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    <a href="#top">Jump to the Top</a>
+  </footer>
+</body>
+
+</html>
